@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#iclude <cstring>
 
 void usage(char *progname) {
     printf("Usage: %s number1 operation number2\n", progname);
@@ -15,6 +15,7 @@ int main(int argc, char* argv[]) {
     int number1=0;
     int number2=0;
     int result=0;
+    printf("%d",number1);
 
     if (!strcmp("divide", argv[2])) {
         result = number1 / number2;
