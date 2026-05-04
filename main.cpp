@@ -8,6 +8,7 @@ void usage(char *programName) {
     printf("\tsubtract\n");
     printf("\tmultiply\n");
     printf("\tdivide\n");
+    printf("\tmod\n");
     printf("\n");
 }
 
@@ -44,7 +45,11 @@ int main(int argc, char* argv[]) {
             printf("%d / %d = %d\n", number1, number2, result);
             return 0;
         }
-
+    if (!strcmp("mod", argv[2])) {
+    result = number1 % number2;
+    printf("%d % %d = %d\n",number1, number2, result);
+    return 0;
+    }
     }
 
     usage(argv[0]);
