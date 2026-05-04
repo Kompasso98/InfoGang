@@ -15,4 +15,11 @@ int main(int argc, char* argv[]) {
     int number1=0;
     int number2=0;
     int result=0;
+
+    if (!strcmp("divide", argv[2])) {
+        result = number1 / number2;
+        printf("%d / %d = %d\n", number1, number2, result);
+        return 0;
+    }
+
 }
