@@ -1,5 +1,5 @@
 #include <iostream>
-#iclude <cstring>
+#include <cstring>
 
 void usage(char *progname) {
     printf("Usage: %s number1 operation number2\n", progname);
