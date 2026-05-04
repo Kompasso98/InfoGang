@@ -5,6 +5,9 @@ void usage(char *programName) {
     printf("Usage: %s number1 operation number\n", programName);
     printf("Available operations:\n");
     printf("\tadd\n");
+    printf("\tsubtract\n");
+    printf("\tmultiply\n");
+    printf("\tdivide\n");
     printf("\n");
 }
 
