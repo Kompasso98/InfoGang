@@ -1,41 +1,13 @@
 #include <iostream>
-
+double add(double a, double b) {
+    return a + b;
+}
 int main() {
     double num1, num2, result;
     char op;
 
     printf("=== Standard Calculator ===\n");
 
-    // Data input
-    printf("Enter the first number: ");
-    scanf("%lf", &num1);
-
-    printf("Enter the operator (+, -, *, /, %%): ");
-    scanf(" %c", &op);
-
-    printf("Enter the second number: ");
-    scanf("%lf", &num2);
-
-    printf("---------------------------\n");
-
-    // Operations logic
-    switch (op) {
-        case '+':
-            result = num1 + num2;
-            printf("Result: %.2f\n", result);
-            break;
-
-        case '-':
-            result = num1 - num2;
-            printf("Result: %.2f\n", result);
-            break;
-
-        case '*':
-            result = num1 * num2;
-            printf("Result: %.2f\n", result);
-            break;
-
-        case '/':
             if (num2 != 0) {
                 result = num1 / num2;
                 printf("Result: %.2f\n", result);
